@@ -11,7 +11,7 @@ body {
     background-color: #4C9F70;
 }
 
-#current-site a {
+#current-site > a {
     color: whitesmoke;
     font-size: larger;
 }
@@ -38,7 +38,6 @@ body {
     display: flex;
     margin-left: 10%;
     margin: 0;
-    padding: 5px;
     background-color: #2D382E;
 }
 
@@ -52,10 +51,52 @@ body {
     border-radius: 5px;
 }
 
+#HZ-Image, #navbar img {
+    height: 80px;
+    margin-left: auto;
+    padding-right: 30px;
+}
+
+/* dropdown */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    background-color: #2D382E;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 15px;
+    color: rgb(202, 202, 202);
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: whitesmoke;
+    background-color: #4C9F70;
+    transform: none;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* body */
 
 #body-content {
     display: flex;
+    flex-wrap: wrap;
     height: fit-content;
     padding-bottom: 10%;
     padding-top: 1%;
@@ -94,6 +135,10 @@ body {
     margin-top: 5px;
 }
 
+ol h4 {
+    text-decoration: underline;
+}
+
 #sillycat-text h5 {
     margin-bottom: 5px; 
 }
@@ -110,6 +155,61 @@ body {
 #i-know-where-u-live {
     padding-top: 50px;
 }
+
+/*About me*/
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.section-reverse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.section img, .section-reverse img {
+    padding: 40px;
+    border-radius: 60px;
+}
+
+#vodka {
+    width: 400px;
+}
+
+#delta {
+    width: 600px;
+}
+
+#future {
+    width: 600px;
+}
+
+.text {
+    width: 700px;
+    padding: 40px;
+}
+
+.text h1 {
+    margin-top: 5px;
+}
+
+.text p {
+    margin: 20px 0;
+}
+
+.text ul {
+    padding-left: 40px;
+}
+
+.text li {
+    margin: 10px;
+}
+
+
 
 /* footer */
 
@@ -137,4 +237,28 @@ footer h2 {
 
 #links a {
     color:whitesmoke;
+}
+
+
+table, th, td {
+    border-style:ridge;
+    border-collapse: collapse;
+}
+
+th, td {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    background-color: #4C9F70;
+}
+
+.school-year {
+    background-color: #97a89f;
+}
+
+td {
+    background-color:#ebead9
 }

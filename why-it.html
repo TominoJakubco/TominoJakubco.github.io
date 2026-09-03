@@ -1,28 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomíno Jakubčo Website</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
+
 <body>
     <header>
-        <nav>
-            
-            <div id="navbar">
-                <h3>Tomino's SuperGreat Website</h3>
-                <div class="nav-button"><a href="index.html">Home</a></div>
-                <div class="nav-button"><a href="profile.html">About Me</a></div>
-                <div id="current-site" class="nav-button"><a href="why-it.html">Why IT</a></div>
-                <div class="nav-button"><a href="dashboard.html">Dashboard</a></div>
-                <div class="nav-button"><a href="blog.html">Blog</a></div>
-            </div>
-        </nav>
-    </header>
-    <div id="body-content">
+    <nav>
+        <div id="navbar">
 
+            <h3>Tomino's SuperGreat Website</h3>
+
+            <div class="nav-button">
+                <a href="index.html">Home</a>
+            </div>
+
+            <div class="nav-button">
+                <a href="about.html">About Me</a>
+            </div>
+
+            <div id="current-site" class="nav-button">
+                <a href="why-it.html">Why IT</a>
+            </div>
+
+            <div class="nav-button">
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+
+            <div class="nav-button dropdown">
+                <a href="blog.html" class="dropbtn">Blog</a>
+
+                <div class="dropdown-content">
+                    <a href="blog.html">Blog</a>
+                    <a href="goals.html">Goals</a>
+                    <a href="directions.html">Directions</a>
+                </div>
+            </div>
+
+            <a id="HZ-Image" href="https://hz.nl/en" target="_blank">
+                <img src="HZ.png">
+            </a>
+
+        </div>
+    </nav>
+</header>
+    <div id="body-content">
+        <div class="section">
+            <div class="text">
+                <h1>
+                    Why ICT
+                </h1>
+                <p>
+                    I started learning programming when I was around 15 years old. I first started with python and when
+                    I went to programming school I learned C#, Java, php, React, TypeScript and more.
+                </p>
+                <p>
+                    Though I can do basics in frontend languages, I do not enjoy it. 
+                    I don't like designing websites or even if somebody designs it for me and I have to go through 
+                    "Oh, this has to have margin a little larger so that it would fit this image" or whatever. 
+                    
+                </p>
+            </div>
+
+        </div>
     </div>
     <footer>
         <h2>Very Special and Important Footer</h2>
@@ -31,7 +76,7 @@
                 <p>Email:</p>
                 <p>Number:</p>
                 <p>Instagram:</p>
-                <p>GitHub</p>
+                <p>GitHub:</p>
             </div>
             <div id="links">
                 <p>tomasjakubco01@gmail.com</p>
@@ -42,4 +87,5 @@
         </div>
     </footer>
 </body>
+
 </html>
