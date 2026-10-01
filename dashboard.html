@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomíno Jakubčo Website</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script src="dashboard.js"></script>
 </head>
+
 <body>
     <header>
-    <nav>
-        <div id="navbar">
+        <nav>
+            <div id="navbar">
 
-            <h3>Tomino's SuperGreat Website</h3>
+                <h3>Tomino's SuperGreat Website</h3>
 
-            <div class="nav-button">
-                <a href="index.html">Home</a>
-            </div>
-
-            <div class="nav-button">
-                <a href="about.html">About Me</a>
-            </div>
-
-            <div class="nav-button">
-                <a href="why-it.html">Why IT</a>
-            </div>
-
-            <div id="current-site" class="nav-button">
-                <a href="dashboard.html">Dashboard</a>
-            </div>
-
-            <div class="nav-button dropdown">
-                <a href="blog.html" class="dropbtn">Blog</a>
-
-                <div class="dropdown-content">
-                    <a href="blog.html">Blog</a>
-                    <a href="goals.html">Goals</a>
-                    <a href="directions.html">Directions</a>
+                <div class="nav-button">
+                    <a href="index.html">Home</a>
                 </div>
+
+                <div class="nav-button">
+                    <a href="about.html">About Me</a>
+                </div>
+
+                <div class="nav-button">
+                    <a href="why-it.html">Why IT</a>
+                </div>
+
+                <div id="current-site" class="nav-button">
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+
+                <div class="nav-button dropdown">
+                    <a href="blog.html" class="dropbtn">Blog</a>
+
+                    <div class="dropdown-content">
+                        <a href="blog.html">Blog</a>
+                        <a href="goals.html">Goals</a>
+                        <a href="directions.html">Directions</a>
+                    </div>
+                </div>
+
+                <a id="HZ-Image" href="https://hz.nl/en" target="_blank">
+                    <img src="images/HZ.png">
+                </a>
+
             </div>
-
-            <a id="HZ-Image" href="https://hz.nl/en" target="_blank">
-                <img src="images/HZ.png">
-            </a>
-
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
     <div id="body-content">
+
+        <div id="progress-wrapper">
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <p id="progress-label">0 / 60 EC</p>
+        </div>
 
         <table>
             <tr>
                 <th>Quarter</th>
                 <th>Course</th>
-                 <th>EC</th>
+                <th>EC</th>
                 <th>Exam</th>
                 <th>Grade</th>
             </tr>
@@ -78,8 +87,8 @@
             </tr>
             <tr>
                 <td class="school-year" rowspan="3">2</td>
-                <td >OOP</td>
-                <td >5</td>
+                <td>OOP</td>
+                <td>5</td>
                 <td>Assessment</td>
                 <td>_/10</td>
             </tr>
@@ -133,7 +142,7 @@
                 <td>Portfolio</td>
                 <td>_/10</td>
             </tr>
-            
+
         </table>
     </div>
     <footer>
@@ -154,4 +163,5 @@
         </div>
     </footer>
 </body>
+
 </html>

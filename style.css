@@ -5,6 +5,46 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* progress bar */
+
+#progress-wrapper {
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#progress-container {
+    max-width: 700px;
+    margin: 0 auto;
+    height: 30px;
+    background-color: #ebead9;
+    border: 2px ridge #2D382E;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #4C9F70;
+    transition: width 0.4s ease;
+}
+
+.grade-input {
+    width: 55px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.grade-input.passed {
+    background-color: #b9e0c8;
+}
+
+.grade-input.failed {
+    background-color: #f0b9b9;
+}
+
+
 /*header*/
 
 #current-site {
@@ -261,4 +301,33 @@ th {
 
 td {
     background-color:#ebead9
+}
+
+/* SWOT */
+.goals-wide {
+    width: 1000px;
+}
+
+#swot-table, #smart-table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#swot-table td, #smart-table td {
+    text-align: left;
+    vertical-align: top;
+    font-size: 18px;
+}
+
+#swot-table ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+#swot-table li {
+    margin: 8px 0;
+}
+
+#smart-table th:first-child {
+    background-color: #97a89f;
 }
