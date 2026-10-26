@@ -1,163 +1,249 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomíno Jakubčo Website</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-    <header>
-    <nav>
-        <div id="navbar">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Goals</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="navbar">
+                    <h3>Tomino's SuperGreat Website</h3>
 
-            <h3>Tomino's SuperGreat Website</h3>
+                    <div class="nav-button">
+                        <a href="index.html">Home</a>
+                    </div>
 
-            <div class="nav-button">
-                <a href="index.html">Home</a>
-            </div>
+                    <div class="nav-button">
+                        <a href="about.html">About Me</a>
+                    </div>
 
-            <div class="nav-button">
-                <a href="about.html">About Me</a>
-            </div>
+                    <div class="nav-button">
+                        <a href="why-it.html">Why IT</a>
+                    </div>
 
-            <div class="nav-button">
-                <a href="why-it.html">Why IT</a>
-            </div>
+                    <div class="nav-button">
+                        <a href="dashboard.html">Dashboard</a>
+                    </div>
 
-            <div class="nav-button">
-                <a href="dashboard.html">Dashboard</a>
-            </div>
+                    <div id="current-site" class="nav-button dropdown">
+                        <a href="goals.html" class="dropbtn">Goals</a>
 
-            <div id="current-site" class="nav-button dropdown">
-                <a href="goals.html" class="dropbtn">Goals</a>
+                        <div class="dropdown-content">
+                            <a href="blog.html">Blog</a>
+                            <a href="goals.html">Goals</a>
+                            <a href="directions.html">Directions</a>
+                        </div>
+                    </div>
 
-                <div class="dropdown-content">
-                    <a href="blog.html">Blog</a>
-                    <a href="goals.html">Goals</a>
-                    <a href="directions.html">Directions</a>
+                    <div id="hz-menu" class="dropdown">
+                        <a
+                            id="hz-image"
+                            href="https://hz.nl/en"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src="images/hz.png" alt="hz" />
+                        </a>
+                        <div class="dropdown-content">
+                            <a
+                                href="https://hz.nl/organisatie/documenten-regelingen-jaarverslagen"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Regulations</a
+                            >
+                            <a
+                                href="https://portal.hz.nl/en/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Learn.nl</a
+                            >
+                            <a
+                                href="https://github.com/HZ-HBO-ICT"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >HZ GitHub</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main id="body-content">
+            <!-- SWOT -->
+            <div class="section goals-section">
+                <div class="text goals-wide">
+                    <h1>My SWOT Analysis</h1>
+
+                    <table id="swot-table">
+                        <tr>
+                            <th>Strengths</th>
+                            <th>Weaknesses</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <b>Skilled:</b> I pick up new languages
+                                        and technologies quickly, and I'm
+                                        comfortable in Java and C#.
+                                    </li>
+                                    <li>
+                                        <b>Analytical:</b> I split big problems
+                                        into small steps and solve them one by
+                                        one.
+                                    </li>
+                                    <li>
+                                        <b>Determined:</b>If I get really interested in a problem or topic I can stay up all night working on it without getting tired or bored.
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <b>Procrastination:</b> I tend to start
+                                        assignments way too close to the
+                                        deadline.
+                                    </li>
+                                    <li>
+                                        <b>Presenting:</b> Speaking in front of
+                                        a group stresses me out.
+                                    </li>
+                                    <li>
+                                        Unseriousness: I often joke around and don't take
+                                        things seriously enough, which can make me look unprofessional.
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Opportunities</th>
+                            <th>Threats</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>
+                                        Internships at software companies in the
+                                        region.
+                                    </li>
+                                    <li>
+                                        Teachers and fellow students who can
+                                        help me with planning.
+                                    </li>
+                                    <li>
+                                        New technologies and programming languages to learn, which can help me become a better developer.
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <b>Laziness:</b> I often leave things up until the very last minute which causes me to stress and panic which in turn makes me even more scared to actaully start working on said thing.
+                                    </li>
+                                    
+                                    <li>
+                                        <b>Hobbies:</b> League of Legends has a
+                                        way of eating entire evenings.
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
 
-            <a id="HZ-Image" href="https://hz.nl/en" target="_blank">
-                <img src="images/HZ.png">
-            </a>
+            <!-- SMART GOALS -->
+            <div class="section-reverse goals-section">
+                <div class="text goals-wide">
+                    <h1>My SMART Study Goals</h1>
 
-        </div>
-    </nav>
-</header>
-    <div id="body-content">
-
-
-        <!-- SWOT -->
-        <div class="section goals-section">
-            <div class="text goals-wide">
-                <h1>My SWOT Analysis</h1>
-
-                <table id="swot-table">
-                    <tr>
-                        <th>Strengths</th>
-                        <th>Weaknesses</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li><b>Skilled:</b> I pick up new languages and technologies quickly, and I'm comfortable in Java and C#.</li>
-                                <li><b>Determined:</b> I don't quit on a problem until it actually works.</li>
-                                <li><b>Analytical:</b> I split big problems into small steps and solve them one by one.</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li><b>Procrastination:</b> I tend to start assignments way too close to the deadline.</li>
-                                <li><b>Presenting:</b> Speaking in front of a group stresses me out.</li>
-                                <li><b>Asking for help:</b> I struggle alone for too long before I ask someone.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Opportunities</th>
-                        <th>Threats</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Internships at software companies in the region.</li>
-                                <li>Online courses and certifications (Python, cloud) next to my studies.</li>
-                                <li>Teachers and fellow students who can help me with planning.</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li><b>Laziness:</b> My biggest enemy is usually me and my couch.</li>
-                                <li><b>My job:</b> Work takes a lot of time and energy that I could put into school.</li>
-                                <li><b>Hobbies:</b> League of Legends has a way of eating entire evenings.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
+                    <table id="smart-table">
+                        <tr>
+                            <th></th>
+                            <th>Goal</th>
+                            <th>Specific &amp; Measurable</th>
+                            <th>Deadline</th>
+                        </tr>
+                        <tr>
+                            <th>Goal 1<br />(Strength: analytical thinking)</th>
+                            <td>
+                                Practise problem solving by solving algorithm
+                                exercises on a website like Codewars or
+                                LeetCode.
+                            </td>
+                            <td>
+                                I solve at least 2 exercises every week until I
+                                have solved 20 in total, and for each one I
+                                write down how I split it into steps.
+                            </td>
+                            <td>20 exercises solved by 8 January 2027.</td>
+                        </tr>
+                        <tr>
+                            <th>Goal 2<br />(Weakness: presenting)</th>
+                            <td>
+                                Get more comfortable with presenting in front of
+                                a group.
+                            </td>
+                            <td>
+                                Before every presentation at school I rehearse
+                                it out loud at least twice, and I volunteer to
+                                be the speaker in at least one group
+                                presentation.
+                            </td>
+                            <td>Evaluated at the end of January 2027.</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-        </div>
 
+            <!-- MISSION -->
+            <div class="section goals-section">
+                <div class="text goals-wide">
+                    <h1>My Mission This Year</h1>
 
-        <!-- SMART GOALS -->
-        <div class="section-reverse goals-section">
-            <div class="text goals-wide">
-                <h1>My SMART Study Goals</h1>
-
-                <table id="smart-table">
-                    <tr>
-                        <th></th>
-                        <th>Goal</th>
-                        <th>Specific &amp; Measurable</th>
-                        <th>Deadline</th>
-                    </tr>
-                    <tr>
-                        <th>Goal 1<br>(Strength: determination)</th>
-                        <td>Finish a personal backend project from start to end this semester, for example a REST API with a database.</td>
-                        <td>I work on it at least 4 hours every week and keep going after every setback instead of abandoning it.</td>
-                        <td>Working demo shown to my teacher by 31 January 2027.</td>
-                    </tr>
-                    <tr>
-                        <th>Goal 2<br>(Weakness: procrastination)</th>
-                        <td>Stop leaving assignments until the last minute.</td>
-                        <td>I start every assignment at least 3 days before its deadline and plan it in my calendar every Sunday evening.</td>
-                        <td>Evaluated after 10 weeks, at the end of this term.</td>
-                    </tr>
-                </table>
+                    <p>
+                        As an HBO-ICT student, I am working on becoming a
+                        backend developer, one solved problem at a time. I am
+                        sharpening my analytical thinking by solving algorithm
+                        exercises every week, so I can handle bigger problems
+                        with confidence. This year I am also learning to present
+                        my work without panicking, by practising it out loud
+                        before every presentation. My goal is to finish this
+                        year as a student who can both build good software and
+                        explain it to others.
+                    </p>
+                </div>
             </div>
-        </div>
-
-
-        <!-- MISSION -->
-        <div class="section goals-section">
-            <div class="text goals-wide">
-                <h1>My Mission This Year</h1>
-
-                <p>
-                    As an HBO-ICT student, I am working on becoming a backend developer, one solved problem at a time. My determination means I don't give up on difficult programming problems, even when they make me question my life choices. This year I am learning to plan my time better, so I finish my assignments on time instead of putting them off. By the end of this academic year I want a working application of my own to show, as proof that I actually grew (and maybe that I can also be useful in a team).
-                </p>
+        </main>
+        <footer>
+            <h2>Very Special and Important Footer</h2>
+            <div id="footer-content">
+                <div id="sites">
+                    <p>Instagram:</p>
+                    <p>GitHub:</p>
+                </div>
+                <div id="links">
+                    <p>
+                        <a
+                            href="https://www.instagram.com/tominofrfr/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >@tominofrfr</a
+                        >
+                    </p>
+                    <p>
+                        <a
+                            href="https://github.com/TominoJakubco"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >@TominoJakubco</a
+                        >
+                    </p>
+                </div>
             </div>
-        </div>
-
-    </div>
-    <footer>
-        <h2>Very Special and Important Footer</h2>
-        <div id="footer-content">
-            <div id="sites">
-                <p>Email:</p>
-                <p>Number:</p>
-                <p>Instagram:</p>
-                <p>GitHub:</p>
-            </div>
-            <div id="links">
-                <p>tomasjakubco01@gmail.com</p>
-                <p>+420 606 124 169</p>
-                <p><a href="https://www.instagram.com/tominofrfr/" target="_blank">@tominofrfr</a></p>
-                <p><a href="https://github.com/TominoJakubco" target="_blank">@TominoJakubco</a></p>
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

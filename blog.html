@@ -1,71 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomíno Jakubčo Website</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-    <header>
-    <nav>
-        <div id="navbar">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-            <h3>Tomino's SuperGreat Website</h3>
+    <body>
+        <header>
+            <nav>
+                <div id="navbar">
+                    <h3>Tomino's SuperGreat Website</h3>
 
-            <div class="nav-button">
-                <a href="index.html">Home</a>
-            </div>
+                    <div class="nav-button">
+                        <a href="index.html">Home</a>
+                    </div>
 
-            <div class="nav-button">
-                <a href="about.html">About Me</a>
-            </div>
+                    <div class="nav-button">
+                        <a href="about.html">About Me</a>
+                    </div>
 
-            <div class="nav-button">
-                <a href="why-it.html">Why IT</a>
-            </div>
+                    <div class="nav-button">
+                        <a href="why-it.html">Why IT</a>
+                    </div>
 
-            <div class="nav-button">
-                <a href="dashboard.html">Dashboard</a>
-            </div>
+                    <div class="nav-button">
+                        <a href="dashboard.html">Dashboard</a>
+                    </div>
 
-            <div id="current-site" class="nav-button dropdown">
-                <a href="blog.html" class="dropbtn">Blog</a>
+                    <div id="current-site" class="nav-button dropdown">
+                        <a href="blog.html" class="dropbtn">Blog</a>
 
-                <div class="dropdown-content">
-                    <a href="blog.html">Blog</a>
-                    <a href="goals.html">Goals</a>
-                    <a href="directions.html">Directions</a>
+                        <div class="dropdown-content">
+                            <a href="blog.html">Blog</a>
+                            <a href="goals.html">Goals</a>
+                            <a href="directions.html">Directions</a>
+                        </div>
+                    </div>
+
+                    <div id="hz-menu" class="dropdown">
+                        <a
+                            id="hz-image"
+                            href="https://hz.nl/en"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src="images/hz.png" alt="hz" />
+                        </a>
+                        <div class="dropdown-content">
+                            <a
+                                href="https://hz.nl/organisatie/documenten-regelingen-jaarverslagen"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Regulations</a
+                            >
+                            <a
+                                href="https://portal.hz.nl/en/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Learn.nl</a
+                            >
+                            <a
+                                href="https://github.com/HZ-HBO-ICT"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >HZ GitHub</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="body-content">
+            <div class="section">
+                <div class="text">
+                    <h1>My Blog</h1>
+
+                    <p>
+                        Welcome to my blog! This is where I share my projects,
+                        experiences and progress throughout my HBO-ICT studies.
+                        The newest posts are at the top, click "Read more..." to
+                        open the full post.
+                    </p>
+
+                    <article class="blog-post">
+                        <h2>The Tetris of Logistics: 3D Bin Packing</h2>
+                        <p>
+                            My article about the ICT field of work. I picked 3D
+                            bin packing because I worked on this problem in my
+                            graduation project (maturita), so I was curious how
+                            it is used in real logistics software.
+                        </p>
+                        <p>Short summary of the article:</p>
+                        <ul>
+                            <li>
+                                3D bin packing means arranging items of
+                                different sizes into containers such as boxes,
+                                pallets or trucks, so that as little space and
+                                money as possible is wasted.
+                            </li>
+                            <li>
+                                Software solves it with heuristics (fast rules
+                                of thumb, not always optimal), exact algorithms
+                                (always optimal, but too slow for big inputs) or
+                                metaheuristics (a compromise that keeps
+                                improving a first solution).
+                            </li>
+                            <li>
+                                The best result is not always the fullest box.
+                                Carrier prices depend on weight and size limits,
+                                so splitting one order into two cartons can be
+                                much cheaper. The article gives an example with
+                                42% lower transport costs.
+                            </li>
+                        </ul>
+                        <p>
+                            <a
+                                href="https://www.optioryx.com/blog/3d-bin-packing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Read more...</a
+                            >
+                        </p>
+                    </article>
+
+                    <article class="blog-post">
+                        <h2>My Programming Experience</h2>
+                        <p>
+                            I went to a secondary school with a programming
+                            focus, where I learned the basics of software
+                            development, and I later worked as a intern/trainee at
+                            Foxconn. My code and projects are on my GitHub.
+                        </p>
+                        <p>
+                            <a
+                                href="https://github.com/TominoJakubco"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Read more...</a
+                            >
+                        </p>
+                    </article>
+
+                    <article class="blog-post">
+                        <h2>My Direction</h2>
+                        <p>
+                            Where I see myself in the future: working as a
+                            software engineer or backend developer at a company
+                            that builds useful software and gives its developers
+                            room to learn.
+                        </p>
+                        <p>
+                            <a href="directions.html">Read more...</a>
+                        </p>
+                    </article>
+
+                    <article class="blog-post">
+                        <h2>My Goals</h2>
+                        <p>
+                            My SWOT analysis as a student, two SMART study goals
+                            based on it and my mission for this year.
+                        </p>
+                        <p>
+                            <a href="goals.html">Read more...</a>
+                        </p>
+                    </article>
                 </div>
             </div>
+        </main>
 
-            <a id="HZ-Image" href="https://hz.nl/en" target="_blank">
-                <img src="images/HZ.png">
-            </a>
+        <footer>
+            <h2>Very Special and Important Footer</h2>
 
-        </div>
-    </nav>
-</header>
-    <div id="body-content">
-        
-    </div>
-    <footer>
-        <h2>Very Special and Important Footer</h2>
-        <div id="footer-content">
-            <div id="sites">
-                <p>Email:</p>
-                <p>Number:</p>
-                <p>Instagram:</p>
-                <p>GitHub:</p>
+            <div id="footer-content">
+                <div id="sites">
+                    <p>Instagram:</p>
+                    <p>GitHub:</p>
+                </div>
+
+                <div id="links">
+                    <p>
+                        <a
+                            href="https://www.instagram.com/tominofrfr/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            @tominofrfr
+                        </a>
+                    </p>
+                    <p>
+                        <a
+                            href="https://github.com/TominoJakubco"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            @TominoJakubco
+                        </a>
+                    </p>
+                </div>
             </div>
-            <div id="links">
-                <p>tomasjakubco01@gmail.com</p>
-                <p>+420 606 124 169</p>
-                <p><a href="https://www.instagram.com/tominofrfr/" target="_blank">@tominofrfr</a></p>
-                <p><a href="https://github.com/TominoJakubco" target="_blank">@TominoJakubco</a></p>
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
